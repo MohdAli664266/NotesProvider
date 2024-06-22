@@ -93,7 +93,9 @@ function Navbar() {
           <NavLink to="about" onClick={(e) => setToggle(!toggle)}>
             <li>About</li>
           </NavLink>
-          {logout && <li onClick={logoutHandle}>Logout</li>}
+          {logout && <NavLink to="about" onClick={logoutHandle}>
+            <li>Logout</li>
+          </NavLink>}
         </ul>
       </div>
     </>
