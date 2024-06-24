@@ -87,8 +87,8 @@ function Login() {
             srcSet=""
           />
         </div>
-        <div className="shadow-lg grid grid-cols-2 text-white shadow-gray-950 bg-white/10 backdrop-blur-sm absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
-          <div className="bg-white py-20 px-16 text-black flex flex-col gap-4">
+        <div className="shadow-lg grid grid-cols-2 text-white shadow-gray-950 bg-white/10 absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
+          <div className="bg-white/50 py-20 px-16 text-black flex flex-col gap-4">
             <h1 className="text-4xl font-bold">Welcome Sir</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
