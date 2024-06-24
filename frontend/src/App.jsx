@@ -3,12 +3,10 @@ import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 function App() {
   return (
-    <div className="">
+    <div className="flex flex-col">
       <Navbar />
       <Outlet />
-      <div className="absolute bottom-0">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }

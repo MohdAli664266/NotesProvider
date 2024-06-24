@@ -11,11 +11,16 @@ import Signup from "./Components/Signup/Signup.jsx";
 import { Provider } from "react-redux";
 import Store from "./Components/Store/Store.js";
 import AddNote from "./Components/Home/AddNote.jsx";
+import Profile from "./Components/Profile/Profile.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
       {
         path: "login",
         element: <Login />,
@@ -32,6 +37,10 @@ const router = createBrowserRouter([
         path: "addnote",
         element: <AddNote />,
       },
+      {
+        path: "profile",
+        element: <Profile />,
+      },
     ],
   },
   {
@@ -39,6 +48,7 @@ const router = createBrowserRouter([
     element: <Error />,
   },
 ]);
+document.getElementById("root").style.backgroundColor = "#E3E6E6"
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={Store}>

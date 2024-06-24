@@ -8,7 +8,7 @@ function Footer() {
     setEmail("");
   };
   return (
-    <div className="grid grid-cols-2 gap-4 w-full bg-[#cecece] bottom-0 p-4">
+    <div className="grid grid-cols-2 gap-4 w-full bg-[#cecece] px-20 py-4 relative top-16">
       <div className="flex justify-center items-center flex-col shadow-sm shadow-gray-950 p-2">
         <h1 className="text-lg">Stay Connected</h1>
         <form
