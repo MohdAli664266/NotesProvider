@@ -65,16 +65,16 @@ function Home() {
       </div>
       <h1 className="text-xl text-white">Electronics Items</h1>
       <div className="flex scrollbar-hide p-4 overflow-auto bg-[#fff]">
-        {cards.map((item) => (
-          <div key={Date.now()}>
+        {cards.map((item, index) => (
+          <div key={index}>
             <Products />
           </div>
         ))}
       </div>
       <h1 className="text-xl text-black mt-8">Shoes</h1>
       <div className="flex scrollbar-hide p-4 overflow-auto bg-[#fff]">
-        {cards.map((item) => (
-          <div key={Date.now()}>
+        {cards.map((item, index) => (
+          <div key={index}>
             <Products />
           </div>
         ))}
