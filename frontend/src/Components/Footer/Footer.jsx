@@ -8,7 +8,7 @@ function Footer() {
     setEmail("");
   };
   return (
-    <div className="grid grid-cols-2 gap-4 w-full bg-[#cecece] px-20 py-4 relative top-16">
+    <div className="grid grid-cols-2 gap-4 w-full bg-[#cecece] p-24 relative top-16">
       <div className="flex justify-center items-center flex-col shadow-sm shadow-gray-950 p-2">
         <h1 className="text-lg">Stay Connected</h1>
         <form
@@ -23,7 +23,7 @@ function Footer() {
             placeholder="Enter email"
             required
           />
-          <button className="bg-[#0f0] px-2 shrink-0">Eamil</button>
+          <button className="bg-[#000] px-2 shrink-0 text-white">Eamil</button>
         </form>
       </div>
 

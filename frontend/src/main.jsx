@@ -12,6 +12,7 @@ import { Provider } from "react-redux";
 import Store from "./Components/Store/Store.js";
 import AddNote from "./Components/Home/AddNote.jsx";
 import Profile from "./Components/Profile/Profile.jsx";
+import MyCart from "./Components/MyCart/MyCart.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "signup",
         element: <Signup />,
+      },
+      {
+        path: "mycart",
+        element: <MyCart />,
       },
       {
         path: "home",

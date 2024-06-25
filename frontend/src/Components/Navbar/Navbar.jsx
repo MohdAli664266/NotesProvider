@@ -49,22 +49,22 @@ function Navbar() {
         </div>
         <div className="text-white">
           <ul className="flex justify-center items-center gap-8 text-xl">
-            <NavLink to="home" className={({isActive}) => `${isActive ? "border-b-2 border-white" : "border-none"}`} onClick={(e) => toast.success("Working")}>
+            <NavLink to="home" className={({isActive}) => `${isActive ? "border-b-2 border-white text-white/80" : "border-none"}`} onClick={(e) => toast.success("Working")}>
               <li className="cursor-pointer hover:text-white/75">Home</li>
             </NavLink>
             <NavLink to="login" className={({isActive}) => `${isActive ? "border-b-2 border-white text-white/80" : "border-none"}`} onClick={(e) => toast.success("Working")}>
             <li className="cursor-pointer hover:text-white/75">Shop</li>
             </NavLink>
-            <NavLink to="service" className={({isActive}) => `${isActive ? "border-b-2 border-white" : "border-none"}`} onClick={(e) => toast.success("Working")}>
+            <NavLink to="service" className={({isActive}) => `${isActive ? "border-b-2 border-white text-white/80" : "border-none"}`} onClick={(e) => toast.success("Working")}>
             <li className="cursor-pointer hover:text-white/75">Service</li>
             </NavLink>
-            <NavLink to="about" className={({isActive}) => `${isActive ? "border-b-2 border-white" : "border-none"}`} onClick={(e) => toast.success("Working")}>
+            <NavLink to="about" className={({isActive}) => `${isActive ? "border-b-2 border-white text-white/80" : "border-none"}`} onClick={(e) => toast.success("Working")}>
             <li className="cursor-pointer hover:text-white/75">About</li>
             </NavLink>
+            {user?.displayName && <NavLink to="mycart" className={({isActive}) => `${isActive ? "border-b-2 border-white text-white/80" : "border-none"}`} onClick={(e) => toast.success("Working")}>
+            <li className="cursor-pointer hover:text-white/75">MyCart</li>
+            </NavLink>}
           </ul>
-          <h1 className="text-bold text-[#3bfffc] text-xl cursor-pointer">
-            {user?.displayName || user?.phoneNumber}
-          </h1>
         </div>
         <div>
           <IoMenu
